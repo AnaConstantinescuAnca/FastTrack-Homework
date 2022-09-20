@@ -13,6 +13,10 @@ public  class Product {
         this.quantity=quantity;
     }
 
+    public Product() {
+        this.getName() ;
+    }
+
     public double getPrice() {
         return price;
     }

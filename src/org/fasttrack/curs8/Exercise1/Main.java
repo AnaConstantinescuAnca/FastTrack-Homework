@@ -5,6 +5,7 @@ import javax.swing.*;
 public class Main {
 
     public static void main(String[] args) {
+
         Electronics casetofon = new Electronics(200.2, "casetofon", "marca japoneza", 92, "muzical");
 
         casetofon.setLength(20.8);

@@ -11,10 +11,10 @@ public class Electronics extends Product {
         super(price, name, description, quantity);
 
         this.type = type;
-        this.length = length;
-        this.width = width;
-        this.height = height;
-        this.weight = weight;
+        // this.length = length;
+        //this.width = width;
+        // this.height = height;
+        // this.weight = weight;
     }
 
 
@@ -56,8 +56,8 @@ public class Electronics extends Product {
 
     @Override
     public void utilizareProdus(String type) {
-            System.out.println("Produs uz electronic");
-            }
+        System.out.println("Produs uz electronic");
+    }
 }
 
 
