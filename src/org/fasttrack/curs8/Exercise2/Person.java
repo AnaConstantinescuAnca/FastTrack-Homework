@@ -1,6 +1,6 @@
 package org.fasttrack.curs8.Exercise2;
 import java.time.LocalDate;
-import java.util.Date;
+//import java.util.Date;
 
 public interface Person {
     String getFirstName();

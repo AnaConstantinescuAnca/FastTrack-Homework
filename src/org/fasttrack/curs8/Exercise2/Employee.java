@@ -11,7 +11,7 @@ public class Employee implements Person{
     private LocalDate dateOfEmployment;
     private String position;
 
-    public Employee(String firstName, String lastName, LocalDate birthDay, String address, LocalDate dateOfEmployement, String position) {
+    public Employee(String firstName, String lastName, LocalDate birthDay, String address, LocalDate dateOfEmployment, String position) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDay = birthDay;
@@ -40,8 +40,18 @@ public class Employee implements Person{
         return address;
     }
 
-    public String  calculVechime(){
+    public String getPosition() {
+        return position;
+    }
+
+    public LocalDate getDateOfEmployment() {
+        return dateOfEmployment;
+    }
+
+    public String vechime(){
         Period vechime = Period.between(this.dateOfEmployment, LocalDate.now());
-        return String.format("Ani %s, Luni %s, zile %s",vechime.getYears(),vechime.getMonths(),vechime.getDays());
+        String strVechime = vechime.getYears()  + " ani "  + vechime.getMonths() + " luni si " + vechime.getDays() + " zile.";
+        return strVechime;
+        //return String.format("Ani %s, Luni %s, zile %s",vechime.getYears(),vechime.getMonths(),vechime.getDays());
     }
 }
