@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
+    private static String numeIntreg;
 
     public static void main(String[] args) {
 
@@ -37,9 +38,19 @@ public class Main {
                 adminBd.getLastName(),adminBd.getFirstName(), dataFormatata.format(LocalDate.of(1992,3,4)), adminBd.getAddress(),
                 dataFormatata.format(LocalDate.of(2020,2,1)), adminBd.getPosition(), adminBd.getDbTechnology()));
 
+
         //afisez vechime in munca
         System.out.println(angajat1.getLastName() + " " + angajat1.getFirstName() + " s-a angajat in " + dataFormatata.format(angajat1.getDateOfEmployment()));
         System.out.println(angajat1.getLastName() + " " + angajat1.getFirstName() + " are o vechime in munca de " + angajat1.vechime());
+
+
+        //Exercitiul 3
+        //afisez fullName si varsta
+        System.out.println("Numele intreg este " + angajat1.fullName() + " si are " + angajat1.ageEmployee() );
+        System.out.println("Numele intreg este : " + programator.fullName()+ " si are " + programator.ageEmployee() );
+        System.out.println("Numele intreg este : " + adminBd.fullName()+ " si are " + adminBd.ageEmployee() );
+
+
 
     }
 }

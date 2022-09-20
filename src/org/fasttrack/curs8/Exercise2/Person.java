@@ -7,4 +7,8 @@ public interface Person {
     String getLastName();
     LocalDate getBirthDay();
     String getAddress();
+
+    String fullName();
+
+    String ageEmployee();
 }

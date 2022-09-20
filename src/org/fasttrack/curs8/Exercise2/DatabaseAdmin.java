@@ -20,10 +20,5 @@ public class DatabaseAdmin extends Employee {
         return  "db admin " + super.getPosition();
     }
 
-    /*@Override
-    public String getAddress() {
-        return  "db admin " super.getAddress();
-    }*/
-
 
 }
